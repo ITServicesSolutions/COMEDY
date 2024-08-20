@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biography</title>
+</head>
+<body>
+    <h1>Biography</h1>
+    <div>
+        {% for biography in biographies %}
+            <h2>{{ biography.title }}</h2>
+            <p>{{ biography.content }}</p>
+            <p><em>Published on {{ biography.published_at }}</em></p>
+        {% endfor %}
+    </div>
+</body>
+</html>
